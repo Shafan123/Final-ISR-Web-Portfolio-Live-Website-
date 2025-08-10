@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash Thatikonda - IT Supervisor Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f8fafc; /* Light blue-gray */
+            color: #334155; /* Darker text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-content {
+            display: none; /* Hidden by default */
+        }
+        .section-content.active {
+            display: block; /* Show active section */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Light gray track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Medium gray thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Darker gray on hover */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            overflow: hidden; /* Ensures rounded corners apply to table content */
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0; /* Light border */
+        }
+        th {
+            background-color: #e2e8f0; /* Light gray header */
+            font-weight: 600;
+            color: #475569; /* Slightly darker text for headers */
+        }
+        tr:nth-child(even) {
+            background-color: #f1f5f9; /* Lighter alternating row background */
+        }
+        tr:hover {
+            background-color: #cbd5e1; /* Even lighter on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-lg">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Avinash Thatikonda</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('home')">Home</a></li>
+                <li><a href="#gantt" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('gantt')">Gantt Chart</a></li>
+                <li><a href="#coaching" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('coaching')">Coaching & Comm.</a></li>
+                <li><a href="#customer" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('customer')">Customer Service</a></li>
+                <li><a href="#kpi" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('kpi')">KPI & Budget</a></li>
+                <li><a href="#team" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('team')">Team & HR Tools</a></li>
+                <li><a href="#ethics" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('ethics')">Ethics & Culture</a></li>
+                <li><a href="#contact" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium p-2 rounded-md" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main class="container py-8">
+        <!-- Home Section -->
+        <section id="home" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8 active">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Welcome to My IT Supervisor Portfolio</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="flex-shrink-0">
+                    <!-- Placeholder for Headshot -->
+                    <img src="https://placehold.co/200x200/a7d9f7/2a688b?text=Your+Headshot" alt="Avinash Thatikonda Headshot" class="rounded-full w-48 h-48 object-cover border-4 border-blue-200 shadow-md">
+                </div>
+                <div class="text-gray-700">
+                    <p class="text-lg leading-relaxed mb-4">
+                        As an aspiring IT Supervisor, I am committed to fostering an effective, efficient, and respectful work culture while upholding the highest levels of integrity and responsibility. This portfolio showcases my approach to leadership, problem-solving, and team development within the dynamic field of Information Technology.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-3">My Mission</h3>
+                    <p class="mb-4 leading-relaxed">
+                        To guide professional decisions and leadership by encouraging a high level of personal code of ethics, assisting in the creation of an effective, efficient, and respectful work culture, and consistently upholding integrity and top levels of responsibility.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-3">Core Values</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-4 leading-relaxed">
+                        <li><strong>Transparency:</strong> Embrace effective, timely, and clear communication with team members, colleagues, and supervisors. Encourage open expression of concerns and ideas.</li>
+                        <li><strong>Accountability:</strong> Take full ownership of actions, features, and decisions, and hold the team to the same principles. Promptly correct mistakes and focus on solutions.</li>
+                        <li><strong>Respect:</strong> Treat all team members with dignity, regardless of position or background. Establish a participatory climate where everyone feels important and welcome. Listen actively, be constructive, and acknowledge every team member.</li>
+                        <li><strong>Data Privacy:</strong> Rigorously observe data privacy legislation, ensuring secrecy, integrity, and security of all information. Respect user data, secure systems, and prevent unauthorized access.</li>
+                        <li><strong>Non-discrimination:</strong> Treat all team members and job seekers equally, providing equal opportunity without regard to race, gender, age, religion, or other personal attributes. Create an inclusive workplace that values differences.</li>
+                        <li><strong>Professionalism:</strong> Maintain professional conduct at all times, meeting deadlines, communicating respectfully, resolving conflicts maturely, and continuously building leadership capabilities.</li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-3">My Goals</h3>
+                    <p class="leading-relaxed">
+                        My primary goal is to establish a positive team culture characterized by high performance, mutual respect, and shared lofty goals, ensuring continuous improvement and learning.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gantt Chart Section -->
+        <section id="gantt" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">15-Week Project Timeline (Gantt Chart Representation)</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Below is a conceptual representation of a 15-week project timeline. While a specific Gantt chart file was not provided, this outlines key phases and milestones that would typically be tracked in an IT project. This structure helps in visualizing project progress, managing dependencies, and ensuring timely delivery.
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Week</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Phase/Task Group</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Key Activities</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Deliverables/Milestones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4">1-2</td>
+                                <td class="py-3 px-4">Project Kick-off & Planning</td>
+                                <td class="py-3 px-4">Define scope, gather requirements, team assignments, initial documentation.</td>
+                                <td class="py-3 px-4">Project Charter, Stakeholder List</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">3-5</td>
+                                <td class="py-3 px-4">Design & Architecture</td>
+                                <td class="py-3 px-4">System design, database design, infrastructure setup, security review.</td>
+                                <td class="py-3 px-4">Technical Design Document, Infrastructure Plan</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">6-9</td>
+                                <td class="py-3 px-4">Development & Integration</td>
+                                <td class="py-3 px-4">Code development, module integration, continuous integration setup.</td>
+                                <td class="py-3 px-4">Working Prototype, Integrated Modules</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">10-12</td>
+                                <td class="py-3 px-4">Testing & Quality Assurance</td>
+                                <td class="py-3 px-4">Unit testing, integration testing, system testing, user acceptance testing (UAT).</td>
+                                <td class="py-3 px-4">Test Reports, UAT Sign-off</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">13-14</td>
+                                <td class="py-3 px-4">Deployment & Go-Live</td>
+                                <td class="py-3 px-4">Deployment planning, migration, final checks, production launch.</td>
+                                <td class="py-3 px-4">Deployment Plan, System Live</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">15</td>
+                                <td class="py-3 px-4">Post-Launch Support & Review</td>
+                                <td class="py-3 px-4">Monitoring, bug fixes, performance tuning, project retrospective.</td>
+                                <td class="py-3 px-4">Post-Mortem Report, Lessons Learned</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-6">
+                    This timeline emphasizes the iterative nature of IT projects, with clear phases and expected outcomes for each. Detailed tasks within each week would be managed using a dedicated Gantt chart tool.
+                </p>
+            </div>
+        </section>
+
+        <!-- Coaching & Communication Toolkit Section -->
+        <section id="coaching" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Coaching & Communication Toolkit</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Effective coaching and communication are paramount for successful IT teams, especially in diverse cultural environments. My approach emphasizes collaboration, transparency, and continuous feedback.
+                </p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">U.S. Cultural Adaptation in Communication</h3>
+                <p class="mb-4">
+                    Working in the U.S. IT setting highlights a strong emphasis on collaborative and autonomously managed operations. Employees are encouraged to own activities, express themselves in meetings, and present new ideas regardless of their rank. Communication is typically straightforward, forward, and well-timed. Feedback is constructive, regular, and openly discussed in relation to performance and goals. Leaders in the U.S. are generally open and facilitate two-way communication.
+                </p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">My Approach to Coaching & Communication</h3>
+                <ul class="list-disc list-inside space-y-2 mb-4">
+                    <li><strong>Collaborative & Inclusive Leadership:</strong> I strive to foster an environment where team members feel empowered to contribute and innovate.</li>
+                    <li><strong>Promoting Open Communication:</strong> I actively encourage dialogue amongst team members and implement strategies to solicit feedback, ensuring everyone feels free to share ideas.</li>
+                    <li><strong>Clear & Direct Communication:</strong> My communication style is direct and clear, always delivered with respect and professionalism.</li>
+                    <li><strong>Cultural Awareness & Emotional Intelligence:</strong> I continuously practice cultural awareness and emotional intelligence to effectively lead and support a diverse team, understanding and adapting to different communication norms.</li>
+                    <li><strong>Constructive Feedback Cycles:</strong> Regular, constructive feedback is provided to facilitate continuous improvement and professional growth for each team member.</li>
+                </ul>
+
+                <p class="mt-4">
+                    This toolkit ensures that my team not only understands their tasks but also feels supported, valued, and empowered to achieve their full potential.
+                </p>
+            </div>
+        </section>
+
+        <!-- Customer Service & Incident Toolkit Section -->
+        <section id="customer" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Customer Service & Incident Toolkit</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Providing exceptional customer service and efficient incident management are critical functions in IT. This toolkit outlines key principles and strategies to ensure timely resolution, customer satisfaction, and continuous improvement.
+                </p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Customer Service Philosophy</h3>
+                <ul class="list-disc list-inside space-y-2 mb-4">
+                    <li><strong>Empathy & Active Listening:</strong> Understand customer issues from their perspective and listen carefully to their concerns.</li>
+                    <li><strong>Clear & Timely Communication:</strong> Keep customers informed about the status of their issues, explain technical details in an understandable manner, and manage expectations effectively.</li>
+                    <li><strong>Problem Ownership:</strong> Take full responsibility for resolving issues, even if it requires coordination with other teams.</li>
+                    <li><strong>Proactive Support:</strong> Anticipate potential issues and provide solutions or guidance before they escalate into problems.</li>
+                    <li><strong>Feedback Integration:</strong> Actively solicit and use customer feedback to improve service quality and processes.</li>
+                </ul>
+
+                <h3 class="2xl font-semibold text-blue-600 mb-3">Incident Management Process</h3>
+                <ol class="list-decimal list-inside space-y-2 mb-4">
+                    <li><strong>Identification & Logging:</strong> All incidents are promptly identified, reported, and accurately logged in the ticketing system (e.g., Freshdesk).</li>
+                    <li><strong>Categorization & Prioritization:</strong> Incidents are categorized by type (e.g., hardware, software, network) and prioritized based on impact and urgency (e.g., critical, high, medium, low).</li>
+                    <li><strong>Investigation & Diagnosis:</strong> IT support staff investigate the incident to determine the root cause, utilizing diagnostic tools and knowledge bases.</li>
+                    <li><strong>Resolution & Recovery:</strong> Solutions are implemented to restore service as quickly as possible, focusing on minimizing business disruption.</li>
+                    <li><strong>Closure:</strong> Once the service is restored and the customer confirms satisfaction, the incident is formally closed in the system.</li>
+                    <li><strong>Documentation & Review:</strong> All steps taken, solutions applied, and lessons learned are documented. Regular reviews are conducted to identify trends and improve future incident response.</li>
+                </ol>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Key Tools & Practices</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Ticketing System:</strong> Centralized platform (e.g., Freshdesk) for logging, tracking, and managing all customer inquiries and incidents.</li>
+                    <li><strong>Knowledge Base:</strong> Comprehensive repository of solutions, FAQs, and troubleshooting guides for quick reference and self-service.</li>
+                    <li><strong>SLA Monitoring:</strong> Adherence to Service Level Agreements (SLAs) for response and resolution times is continuously monitored.</li>
+                    <li><strong>Communication Tools:</strong> Utilize tools like Zoom for effective communication with clients and team collaboration during incidents.</li>
+                    <li><strong>Escalation Procedures:</strong> Clear escalation paths are defined for complex or critical incidents that require higher-level expertise.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- KPI Dashboard & Mini Budget Section -->
+        <section id="kpi" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">KPI Dashboard & Mini Budget</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Monthly Supervisor Summary Report - Key Performance Indicators (KPIs)</h3>
+                <p class="mb-4">
+                    Our team's performance has shown gradual improvement across key indicators.
+                </p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">KPI</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Previous</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Current</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Target</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4">Average Resolution Time</td>
+                                <td class="py-3 px-4">5.2 hours</td>
+                                <td class="py-3 px-4">4.1 hours</td>
+                                <td class="py-3 px-4">Lower</td>
+                                <td class="py-3 px-4 text-orange-600 font-medium">Improving, but still above target</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Customer Satisfaction Score</td>
+                                <td class="py-3 px-4">85%</td>
+                                <td class="py-3 px-4">93%</td>
+                                <td class="py-3 px-4">90%</td>
+                                <td class="py-3 px-4 text-green-600 font-medium">Surpassed Target</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Tickets Closed per Week</td>
+                                <td class="py-3 px-4">Below 160</td>
+                                <td class="py-3 px-4">170</td>
+                                <td class="py-3 px-4">160</td>
+                                <td class="py-3 px-4 text-green-600 font-medium">Above Target</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="text-xl font-medium text-blue-500 mb-2">Short-term Goals for Improvement:</h4>
+                <ul class="list-disc list-inside space-y-1 mb-6">
+                    <li>Hold a mid-quarter team feedback session.</li>
+                    <li>Automate ticket triaging to decrease handling time.</li>
+                    <li>Include "first contact resolution" as another key performance indicator.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Mini Budget Plan – Monthly Estimate (IT Support Team)</h3>
+                <p class="mb-4">
+                    A detailed breakdown of monthly expenditures and investments to ensure team effectiveness and continuous improvement.
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Category</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Specific Item</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Unit Cost/Monthly Rate</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Quantity</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Monthly Total</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4">Software</td>
+                                <td class="py-3 px-4">Zoom Pro License</td>
+                                <td class="py-3 px-4">$15</td>
+                                <td class="py-3 px-4">5</td>
+                                <td class="py-3 px-4">$75</td>
+                                <td class="py-3 px-4">Enables virtual meetings with clients and team collaboration</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Software</td>
+                                <td class="py-3 px-4">Freshdesk Support Suite</td>
+                                <td class="py-3 px-4">$25</td>
+                                <td class="py-3 px-4">5</td>
+                                <td class="py-3 px-4">$125</td>
+                                <td class="py-3 px-4">Ticketing and customer support</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Training</td>
+                                <td class="py-3 px-4">Udemy for Business</td>
+                                <td class="py-3 px-4">$30</td>
+                                <td class="py-3 px-4">5</td>
+                                <td class="py-3 px-4">$150</td>
+                                <td class="py-3 px-4">Continuous technical upskilling and certification for team members</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Hardware</td>
+                                <td class="py-3 px-4">Ergonomic Chairs</td>
+                                <td class="py-3 px-4">$120</td>
+                                <td class="py-3 px-4">2</td>
+                                <td class="py-3 px-4">$240</td>
+                                <td class="py-3 px-4">Improves staff comfort and wellbeing</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Hardware</td>
+                                <td class="py-3 px-4">Headsets with Noise Cancel</td>
+                                <td class="py-3 px-4">$50</td>
+                                <td class="py-3 px-4">5</td>
+                                <td class="py-3 px-4">$250</td>
+                                <td class="py-3 px-4">Enhances communication quality for remote or hybrid support staff</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Maintenance</td>
+                                <td class="py-3 px-4">Equipment Maintenance</td>
+                                <td class="py-3 px-4">$100</td>
+                                <td class="py-3 px-4">1</td>
+                                <td class="py-3 px-4">$100</td>
+                                <td class="py-3 px-4">Covers minor repairs or replacements of IT hardware</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Contingency</td>
+                                <td class="py-3 px-4">Emergency Tech Reserve</td>
+                                <td class="py-3 px-4">$200</td>
+                                <td class="py-3 px-4">1</td>
+                                <td class="py-3 px-4">$200</td>
+                                <td class="py-3 px-4">Reserved for unexpected tech purchases or license upgrades</td>
+                            </tr>
+                            <tr class="font-bold">
+                                <td class="py-3 px-4" colspan="4">Total Estimated Monthly Expenditure:</td>
+                                <td class="py-3 px-4">$1140</td>
+                                <td class="py-3 px-4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Leadership & HR Tools Section -->
+        <section id="team" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Team Leadership & HR Tools</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">3-Day Onboarding Plan for New IT Team Member</h3>
+                <p class="mb-4">
+                    This structured onboarding plan aims to integrate new IT team members efficiently, focusing on technical readiness, team integration, and performance synchronization within the first 72 hours.
+                </p>
+                <div class="mb-6">
+                    <h4 class="text-xl font-medium text-blue-500 mb-2">Day 1: Orientation & Setup</h4>
+                    <ul class="list-disc list-inside space-y-1 ml-4">
+                        <li><strong>Welcome & Company Overview:</strong> Short presentation about company mission, IT department structure, and major policies.</li>
+                        <li><strong>HR Orientation:</strong> Benefits allocation, code of conduct, time-keeping procedures, and leave policies.</li>
+                        <li><strong>Environment Setup:</strong> Provide desktop, laptop, screen, keyboard, mouse, desk, and chair; set up corporate email, communication tools (Slack/Teams), and password manager.</li>
+                        <li><strong>Systems Access:</strong> Grant access to ticketing system (e.g., ServiceNow), file sharing, intranet, and other specific software (e.g., Active Directory, Jira).</li>
+                        <li><strong>IT Team Introduction:</strong> Introduction to team members, manager, and assigned onboarding mentor.</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-medium text-blue-500 mb-2">Day 2: Role Familiarization & Shadowing</h4>
+                    <ul class="list-disc list-inside space-y-1 ml-4">
+                        <li><strong>Shadowing:</strong> Review how an experienced team member handles service tickets, escalations, and end-user support.</li>
+                        <li><strong>Introductory Assignments:</strong> Perform simple non-destructive tasks like password resets, or minor software upgrades/fixes under supervision.</li>
+                        <li><strong>Documentation Review:</strong> Read through standard operating procedures, escalation chains, and security guidelines.</li>
+                        <li><strong>Team Lunch:</strong> Casual lunch to foster team spirit.</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-xl font-medium text-blue-500 mb-2">Day 3: Performance Expectations & Hands-On Work</h4>
+                    <ul class="list-disc list-inside space-y-1 ml-4">
+                        <li><strong>KPI Overview:</strong> Presentation of important performance metrics including ticket resolution time, customer satisfaction ratings, and first-call resolution rate.</li>
+                        <li><strong>Service Standards Review:</strong> Review requirements for dialogue, written communication, availability expectations, and SLAs.</li>
+                        <li><strong>Independent Tasks:</strong> Begin independent work with basic tickets, with mentor assistance available.</li>
+                        <li><strong>Check-in Session:</strong> End-of-day discussion to review progress, clarify questions, and prepare next steps with the supervisor.</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">RACI Chart – Onboarding Process</h3>
+                <p class="mb-4">
+                    The RACI matrix clarifies roles and responsibilities for each task in the onboarding process.
+                </p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Task</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">IT Supervisor</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">HR</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">New Hire</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">IT Support Staff</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4">Prepare Onboarding Plan</td>
+                                <td class="py-3 px-4">A (Accountable)</td>
+                                <td class="py-3 px-4">C (Consulted)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Set Up Workstation</td>
+                                <td class="py-3 px-4">C (Consulted)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Provision Systems Access</td>
+                                <td class="py-3 px-4">A (Accountable)</td>
+                                <td class="py-3 px-4">C (Consulted)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Conduct Orientation</td>
+                                <td class="py-3 px-4">C (Consulted)</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Shadowing Session</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                                <td class="py-3 px-4">A (Accountable)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">KPI Introduction</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                                <td class="py-3 px-4">C (Consulted)</td>
+                                <td class="py-3 px-4">A (Accountable)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Feedback Collection</td>
+                                <td class="py-3 px-4">A (Accountable)</td>
+                                <td class="py-3 px-4">C (Consulted)</td>
+                                <td class="py-3 px-4">R (Responsible)</td>
+                                <td class="py-3 px-4">I (Informed)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">PTO Request and Approval Tracker</h3>
+                <p class="mb-4">
+                    A snapshot of the PTO (Paid Time Off) request and approval process, ensuring clear tracking and management of employee leaves.
+                </p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-md">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Employee Name</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Requested Time Off Type</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Start Date</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">End Date</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Supervisor Approval Status</th>
+                                <th class="py-3 px-4 bg-blue-100 text-blue-800">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4">John Smith</td>
+                                <td class="py-3 px-4">Vacation</td>
+                                <td class="py-3 px-4">2025-08-05</td>
+                                <td class="py-3 px-4">2025-08-10</td>
+                                <td class="py-3 px-4 text-green-600 font-medium">Approved</td>
+                                <td class="py-3 px-4">Flight booked; backup in place</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Sarah Johnson</td>
+                                <td class="py-3 px-4">Sick Leave</td>
+                                <td class="py-3 px-4">2025-07-22</td>
+                                <td class="py-3 px-4">2025-07-24</td>
+                                <td class="py-3 px-4 text-orange-600 font-medium">Pending</td>
+                                <td class="py-3 px-4">Awaiting doctor's note</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">David Lee</td>
+                                <td class="py-3 px-4">Personal Day</td>
+                                <td class="py-3 px-4">2025-07-29</td>
+                                <td class="py-3 px-4">2025-07-29</td>
+                                <td class="py-3 px-4 text-green-600 font-medium">Approved</td>
+                                <td class="py-3 px-4">One-day leave</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Priya Patel</td>
+                                <td class="py-3 px-4">Vacation</td>
+                                <td class="py-3 px-4">2025-08-15</td>
+                                <td class="py-3 px-4">2025-08-20</td>
+                                <td class="py-3 px-4 text-red-600 font-medium">Rejected</td>
+                                <td class="py-3 px-4">Overlaps with critical rollout</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Michael Brown</td>
+                                <td class="py-3 px-4">Work From Home</td>
+                                <td class="py-3 px-4">2025-07-25</td>
+                                <td class="py-3 px-4">2025-07-25</td>
+                                <td class="py-3 px-4 text-green-600 font-medium">Approved</td>
+                                <td class="py-3 px-4">Has connectivity setup</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">HR Warning Memo Template</h3>
+                <p class="mb-4">
+                    A template for a formal warning memo, highlighting policy violations and expectations for improvement.
+                </p>
+                <div class="border border-gray-200 p-4 rounded-lg shadow-sm bg-gray-50">
+                    <p class="text-sm text-right text-gray-500 mb-2">Date: July 20, 2025</p>
+                    <p class="mb-1"><strong>To:</strong> Priya R. Sharma</p>
+                    <p class="mb-4"><strong>Subject:</strong> Formal Warning for Policy Violation</p>
+
+                    <h4 class="font-semibold text-lg mb-2 text-blue-500">Violation Description:</h4>
+                    <p class="mb-4">
+                        On the 18th of July 2025, you were missing from work without prior notification or authorization. This is a breach of the EverPeak Technologies policy of attendance and communication as described in the Employee Handbook (Section 4.2).
+                    </p>
+
+                    <h4 class="font-semibold text-lg mb-2 text-blue-500">Supervisor's Statement:</h4>
+                    <p class="mb-4">
+                        Your sudden absence affected the capacity of the IT support team to pursue various high-priority tickets. This led to a slower pace in settling client problems and required short-notice amendment of duties, thus influencing overall team performance.
+                    </p>
+
+                    <h4 class="font-semibold text-lg mb-2 text-blue-500">Improvement Expectations and Timeline:</h4>
+                    <p class="mb-4">
+                        It is your obligation to inform your supervisor of any anticipated absence by no less than 24 hours unless in case of an emergency. Additional unnotified days off over the remaining 60 days can incur more disciplinary action, including termination. A review will be conducted on September 20, 2025.
+                    </p>
+
+                    <h4 class="font-semibold text-lg mb-2 text-blue-500">Acknowledgment:</h4>
+                    <p class="mb-2">Employee Signature: _________________________ Date: _______________</p>
+                    <p class="mb-2">Supervisor Signature: _________________________ Date: _______________</p>
+                    <p>HR Representative: _________________________ Date: _______________</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ethics, Systems, and Culture Section -->
+        <section id="ethics" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Ethics, Systems, and Culture</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Personal Code of Ethics</h3>
+                <p class="mb-4">
+                    My personal code of ethics serves as a guiding framework for professional decisions and leadership within IT. Key values include:
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6">
+                    <li><strong>Transparency:</strong> Open and clear communication, encouraging honest dialogue.</li>
+                    <li><strong>Accountability:</strong> Taking full responsibility for actions and fostering a culture of ownership.</li>
+                    <li><strong>Respect:</strong> Treating all team members with dignity, valuing diverse opinions and backgrounds.</li>
+                    <li><strong>Data Privacy:</strong> Rigorously observing legislation to ensure confidentiality, integrity, and security of information.</li>
+                    <li><strong>Non-discrimination:</strong> Providing equal opportunities and fostering an inclusive workplace for all.</li>
+                    <li><strong>Professionalism:</strong> Upholding high standards of conduct, meeting deadlines, and resolving conflicts maturely.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Ethical Dilemma Response</h3>
+                <p class="mb-4">
+                    A common ethical dilemma for an IT Supervisor involves pressure from upper management to manipulate performance data to misrepresent project success.
+                </p>
+                <div class="border border-gray-200 p-4 rounded-lg shadow-sm bg-gray-50 mb-6">
+                    <h4 class="font-semibold text-lg mb-2 text-blue-500">The Dilemma:</h4>
+                    <p class="mb-3">
+                        Being pressured by upper management to falsify system logs and productivity metrics to make a struggling project appear more successful to a large client, risking job security vs. professional integrity.
+                    </p>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-500">My Response:</h4>
+                    <p class="mb-3">
+                        I would refuse to change the performance data. Instead, I would present the real numbers and explain the reasons behind them, along with the corrective actions already taken. This decision is rooted in the ethical principles of integrity, honesty, and transparency.
+                    </p>
+                    <p class="mb-3">
+                        Misrepresenting data can lead to loss of client trust, damage to organizational reputation, and potential legal penalties. As a leader, it's crucial to lead by example, fostering a culture of accountability. I would emphasize to leadership that transparency builds client confidence and enables realistic improvement plans, ultimately leading to stronger, more honest client relationships and protecting the organization from future risks.
+                    </p>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">U.S. Cultural Adaptation Reflection</h3>
+                <p class="mb-4">
+                    Reflecting on the U.S. IT setting, I've observed a stark contrast to my home country's work culture, particularly in areas of collaboration and communication.
+                </p>
+                <ul class="list-disc list-inside space-y-2 mb-6">
+                    <li><strong>Collaborative & Autonomous IT Operations:</strong> U.S. IT environments encourage individual contribution and team-level decision-making. Employees are empowered to take ownership, express ideas, and participate actively in meetings, irrespective of their rank. This differs from more hierarchical structures where top management makes most decisions and junior employees may be hesitant to voice opinions.</li>
+                    <li><strong>Communication & Feedback Style:</strong> In the U.S., communication is typically well-defined, straightforward, and direct. Feedback is constructive, regular, and expected, with open discussions about performance and goals. Leaders foster two-way communication. In contrast, my native country's feedback is often less direct and less frequent, with employees sometimes reluctant to share opinions with senior management, and a more dictatorial leadership style.</li>
+                </ul>
+                <p class="mb-6">
+                    To be effective in a U.S. IT leadership setting, I aim to cultivate a collaborative and inclusive leadership style, promoting open communication and strategies for feedback. I will strive for clarity and directness in my communication, always maintaining respect and professionalism, and continuously practice cultural awareness and emotional intelligence to lead diverse teams effectively.
+                </p>
+
+                <h3 class="text-2xl font-semibold text-blue-600 mb-3">Causal Loop Diagram for IT Team Dynamics</h3>
+                <p class="mb-4">
+                    This causal loop diagram illustrates the interconnected relationships and feedback loops influencing IT team performance. It highlights how various factors mutually reinforce or counteract each other.
+                </p>
+                <div class="flex justify-center items-center p-4 bg-gray-100 rounded-lg shadow-inner">
+                    <img src="causal_loop_diagram.png-8455b27f-48fb-4047-8394-dd7a7ad2ca03" alt="Causal Loop Diagram" class="max-w-full h-auto rounded-md shadow-md">
+                </div>
+                <p class="mt-4 text-sm text-gray-500 text-center">
+                    (Image: causal_loop_diagram.png)
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="section-content p-6 bg-white rounded-lg shadow-xl mb-8">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Contact Me</h2>
+            <div class="text-gray-700 leading-relaxed text-center">
+                <p class="text-lg mb-4">
+                    Thank you for visiting my portfolio. Please feel free to connect with me through the following channels:
+                </p>
+                <div class="space-y-4">
+                    <p class="text-xl">
+                        <strong class="text-blue-600">Email:</strong> <a href="mailto:avinash.it.supervisor@example.com" class="text-blue-500 hover:underline">avinash.it.supervisor@example.com</a>
+                    </p>
+                    <p class="text-xl">
+                        <strong class="text-blue-600">Résumé:</strong> <a href="https://example.com/your-resume.pdf" target="_blank" class="text-blue-500 hover:underline">Download my Resume (PDF)</a>
+                        <span class="text-sm text-gray-500 ml-2">(Placeholder URL)</span>
+                    </p>
+                    <p class="text-xl">
+                        <strong class="text-blue-600">LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-blue-500 hover:underline">Connect on LinkedIn</a>
+                        <span class="text-sm text-gray-500 ml-2">(Optional Placeholder URL)</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white p-4 text-center rounded-t-lg shadow-inner mt-8">
+        <p>&copy; 2025 Avinash Thatikonda. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section-content').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Optional: Scroll to the top of the content area
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show home section on initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
